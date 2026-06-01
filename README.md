@@ -15,6 +15,7 @@ This section will be populated with plugins submitted by the community. Plugins 
 
 | Plugin Name | Description | Author | Link |
 | :---------- | :---------- | :----- | :--- |
+| Toprank | Open-source Claude Code plugin for SEO analysis, Google Ads management, keyword research, content optimization, and schema markup with real repo edits. | @nowork-studio | [Link to repo](https://github.com/nowork-studio/toprank) |
 | *Example Plugin* | *A brief description of what this plugin does.* | *@username* | *[Link to repo]() |
 | ...         | ...         | ...    | ...  |
 
