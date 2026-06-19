@@ -16,6 +16,7 @@ This section will be populated with plugins submitted by the community. Plugins 
 | Plugin Name | Description | Author | Link |
 | :---------- | :---------- | :----- | :--- |
 | Toprank | Open-source Claude Code plugin for SEO analysis, Google Ads management, keyword research, content optimization, and schema markup with real repo edits. | @nowork-studio | [Link to repo](https://github.com/nowork-studio/toprank) |
+| NotFair | Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP. (~2.9k stars) | @nowork-studio | [Link to repo](https://github.com/nowork-studio/NotFair) |
 | *Example Plugin* | *A brief description of what this plugin does.* | *@username* | *[Link to repo]() |
 | ...         | ...         | ...    | ...  |
 
