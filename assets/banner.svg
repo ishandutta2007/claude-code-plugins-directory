@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e">
+        <animate attributeName="stop-color" values="#1a1a2e;#16213e;#0f3460;#1a1a2e" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#6c47ff">
+        <animate attributeName="stop-color" values="#6c47ff;#8b5cf6;#a78bfa;#6c47ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#d4a574">
+        <animate attributeName="stop-color" values="#d4a574;#e8b88a;#c9956c;#d4a574" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="50%" style="stop-color:#e0d4ff">
+        <animate attributeName="stop-color" values="#e0d4ff;#ffffff;#ffd6a5;#e0d4ff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="1000" y1="0" x2="1000" y2="300"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="100" cy="50" r="2" fill="#a78bfa" opacity="0.7">
+    <animate attributeName="cy" values="50;250;50" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="200" r="3" fill="#d4a574" opacity="0.5">
+    <animate attributeName="cy" values="200;30;200" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="100" r="1.5" fill="#ffffff" opacity="0.4">
+    <animate attributeName="cy" values="100;270;100" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="400;420;400" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="250" r="2.5" fill="#8b5cf6" opacity="0.6">
+    <animate attributeName="cy" values="250;20;250" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="80" r="2" fill="#ffd6a5" opacity="0.5">
+    <animate attributeName="cy" values="80;260;80" dur="13s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="900;880;900" dur="13s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="180" r="3" fill="#a78bfa" opacity="0.4">
+    <animate attributeName="cy" values="180;40;180" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="280" r="1.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="cy" values="280;60;280" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="30" r="2" fill="#d4a574" opacity="0.5">
+    <animate attributeName="cy" values="30;270;30" dur="10.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1150" cy="140" r="1.5" fill="#8b5cf6" opacity="0.6">
+    <animate attributeName="cy" values="140;20;140" dur="11.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulsing orbs -->
+  <circle cx="180" cy="150" r="40" fill="#6c47ff" opacity="0.08" filter="url(#softGlow)">
+    <animate attributeName="r" values="40;60;40" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.08;0.15;0.08" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1020" cy="120" r="50" fill="#d4a574" opacity="0.06" filter="url(#softGlow)">
+    <animate attributeName="r" values="50;70;50" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.06;0.12;0.06" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Plugin icon (puzzle piece) -->
+  <g transform="translate(135, 105)" opacity="0.9" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.9;0.6;0.9" dur="4s" repeatCount="indefinite"/>
+    <path d="M0 15 Q0 0 15 0 L25 0 L25 5 Q30 2 35 5 Q40 8 35 11 L35 15 Q40 12 45 15 Q50 18 45 21 L45 25 L25 25 L25 30 Q30 33 25 36 Q20 39 20 34 L20 25 L0 25 Z" fill="#a78bfa" stroke="#c4b5fd" stroke-width="0.5"/>
+  </g>
+
+  <!-- Main title -->
+  <text x="600" y="125" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="url(#textGrad)" filter="url(#glow)" letter-spacing="1">
+    Claude Code Plugins Directory
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="170" text-anchor="middle" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="18" fill="#c4b5fd" opacity="0.9" letter-spacing="3">
+    <animate attributeName="opacity" values="0.9;0.6;0.9" dur="4s" repeatCount="indefinite"/>
+    COMMUNITY-CURATED AI EXTENSIONS &amp; TOOLS
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="350" y1="195" x2="850" y2="195" stroke="url(#textGrad)" stroke-width="1" opacity="0.3">
+    <animate attributeName="x1" values="350;300;350" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="850;900;850" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Tags -->
+  <g font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" fill="#d4d0ff" opacity="0.7">
+    <text x="370" y="230">🔌 Plugins</text>
+    <text x="480" y="230">🛠️ Tools</text>
+    <text x="575" y="230">🤖 AI</text>
+    <text x="650" y="230">📦 MCP</text>
+    <text x="740" y="230">🚀 Open Source</text>
+  </g>
+
+  <!-- Animated scan line -->
+  <rect x="0" y="0" width="1200" height="2" fill="#a78bfa" opacity="0.1">
+    <animate attributeName="y" values="0;300;0" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
