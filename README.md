@@ -35,7 +35,7 @@ The **Claude Code Plugins Directory** is a community-driven, open-source reposit
 
 This section lists all community-submitted Claude-compatible plugins, sorted by GitHub stars. Each plugin is reviewed to ensure it meets basic standards of quality and safety. 🛡️
 
-| 🔌 Plugin Name | ⭐ Stars | 📝 Description | 🏷️ Category | 👤 Author | 🔗 Repository |
+| 🔌 Plugin Name | ⭐ Github_Stars | 📝 Description | 🏷️ Category | 👤 Author | 🔗 Repository |
 | :---------- | :--- | :---------- | :------- | :----- | :--------- |
 | **skills** | [![GitHub stars](https://img.shields.io/github/stars/anthropics/skills?style=social&color=white)](https://github.com/anthropics/skills) | Official public repository for Agent Skills, intended as a central point for discovering and sharing skills for Claude Code. | Agent Skills / Official 🤖 | [@anthropics](https://github.com/anthropics) | [anthropics/skills](https://github.com/anthropics/skills) |
 | **ponytail** | [![GitHub stars](https://img.shields.io/github/stars/DietrichGebert/ponytail?style=social&color=white)](https://github.com/DietrichGebert/ponytail) | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. | Developer Productivity 🧠 | [@DietrichGebert](https://github.com/DietrichGebert) | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) |
