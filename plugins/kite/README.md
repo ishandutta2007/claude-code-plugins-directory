@@ -25,5 +25,5 @@ Then run `/mcp`, choose `kite` and sign in.
 
 ## Notes
 
-- Kite free plan: unlimited editors, 3 files, 200 agent actions a day, no AI credits
+- Kite free plan: unlimited editors, 3 files, 100 agent actions a day, no AI credits
 - The same repository also packages the plugin for Codex and Cursor
